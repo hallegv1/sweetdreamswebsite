@@ -20,9 +20,9 @@ export function Contact() {
         e.preventDefault();
 
         const { name, subject, message } = formData;
-        const myEmail = "your-email@example.com";
+        const myEmail = "hallevogelpohl@gmail.com";
         const mailtoLink = `mailto:${myEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`)}`;
-        
+
         window.location.href = mailtoLink;
     };
 
