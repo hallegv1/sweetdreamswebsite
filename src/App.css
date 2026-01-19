@@ -1,0 +1,32 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  background: linear-gradient(180deg,
+      var(--sdd-blue),
+      var(--sdd-purple),
+      var(--sdd-pink));
+}
+
+.home-nav-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #ddd;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}

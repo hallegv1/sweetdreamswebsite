@@ -1,0 +1,55 @@
+.dance-company-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: calc(100vh - 80px);
+    text-align: center;
+    padding: 20px;
+}
+
+.dance-company-title {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.dance-company-text {
+    max-width: 600px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.dance-company-nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.back-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #ddd;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
