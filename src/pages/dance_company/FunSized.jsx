@@ -1,13 +1,21 @@
 import '../../styles/DanceCompany.css';
+import logo from '../../assets/fs_logo.png';
 
 export function FunSized() {
-    const funSizedText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    const funSizedText = "Fun Sized is an intermediate/advanced choreography team for dancers ages 9-14 created by Cecilia Fridge. Fueled by a shared passion for dance, Fun Sized cultivates a supportive community for its members to grow in all aspects, from technique and artistry to teamwork and discipline. It's a fun team for the fun sized.";
+    const directorText = "Director: Cecilia Fridge";
+
     return (
-        <div className="dance-company-container">
+        <div className="fs-container">
+            <img src={logo} alt="Fun Sized Logo" className="dance-company-logo" />
             <h1>Fun Sized</h1>
+            <p className="dance-company-text">
+                {directorText}
+            </p>
             <p className="dance-company-text">
                 {funSizedText}
             </p>
+
         </div>
     );
 }

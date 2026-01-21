@@ -1,4 +1,46 @@
-.dance-company-container {
+/**
+ *  Dance Company Gradients
+ */
+
+.fs-container {
+    background: linear-gradient(180deg,
+            var(--cm-baby-peach),
+            var(--cm-peach),
+            var(--cm-pink),
+            var(--cm-orange),
+            var(--cm-yellow));
+}
+
+.cm-container {
+    background: linear-gradient(180deg,
+            var(--cm-baby-peach),
+            var(--cm-peach),
+            var(--cm-pink),
+            var(--cm-orange),
+            var(--cm-yellow));
+}
+
+.gp-container {
+    background: linear-gradient(180deg,
+            var(--gp-pink),
+            var(--gp-purple),
+            var(--gp-dark-purple),
+            var(--gp-red));
+}
+
+.vp-container {
+    background: linear-gradient(180deg,
+            var(--vp-yellow-green),
+            var(--vp-red),
+            var(--vp-turquoise),
+            var(--vp-gray));
+}
+
+.dance-company-container,
+.fs-container,
+.cm-container,
+.gp-container,
+.vp-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,6 +48,12 @@
     min-height: calc(100vh - 80px);
     text-align: center;
     padding: 20px;
+}
+
+.dance-company-logo {
+    width: 400px;
+    height: auto;
+    margin: 30px 0;
 }
 
 .dance-company-title {

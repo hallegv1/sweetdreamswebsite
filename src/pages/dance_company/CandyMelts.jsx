@@ -1,10 +1,17 @@
 import '../../styles/DanceCompany.css';
+import logo from '../../assets/cm_logo.png';
 
 export function CandyMelts() {
-    const candyMeltsText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+    const candyMeltsText = 'Candy Melts is an all inclusive beginner/intermediate team, created by Justine Wang and under the direction of Cecilia Fridge and Leilani Chung, that connects people to themselves and each other. Candy Melts cultivates our groove foundations, fosters our movement exploration and trains the mentality it takes to be a self-sufficient and life-long student.';
+    const directorText = "Director: Justine Wang";
+
     return (
-        <div className="dance-company-container">
+        <div className="cm-container">
+            <img src={logo} alt="Candy Melts Logo" className="dance-company-logo" />
             <h1>Candy Melts</h1>
+            <p className="dance-company-text">
+                {directorText}
+            </p>
             <p className="dance-company-text">
                 {candyMeltsText}
             </p>
