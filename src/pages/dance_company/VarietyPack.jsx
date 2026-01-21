@@ -1,5 +1,6 @@
 import '../../styles/DanceCompany.css';
-import logo from '../../assets/vp_logo.png';
+import logo from '../../assets/logos/vp_logo.png';
+import teamPhoto from '../../assets/images/vp_team.jpg';
 
 export function VarietyPack() {
     const varietyPackText = 'Variety Pack is an all inclusive competitive team created by Justine Wang that highlights the diversity of skills and talent of each individual dancer. Variety Pack pushes our creative boundaries and continues to challenge ourselves both technically and artistically while building a supportive, driven community.';
@@ -13,6 +14,9 @@ export function VarietyPack() {
             <p className="dance-company-text">
                 {directorsAndCaptainsText}
             </p>
+
+            <img src={teamPhoto} alt="Variety Pack team photo" className="dance-company-photo" />
+
             <p className="dance-company-text">
                 {varietyPackText}
             </p>

@@ -1,5 +1,5 @@
 import '../../styles/DanceCompany.css';
-import logo from '../../assets/fs_logo.png';
+import logo from '../../assets/logos/fs_logo.png';
 
 export function FunSized() {
     const funSizedText = "Fun Sized is an intermediate/advanced choreography team for dancers ages 9-14 created by Cecilia Fridge. Fueled by a shared passion for dance, Fun Sized cultivates a supportive community for its members to grow in all aspects, from technique and artistry to teamwork and discipline. It's a fun team for the fun sized.";

@@ -1,4 +1,5 @@
 import '../styles/DanceCompany.css';
+import teamPhoto from '../assets/images/sdd_team.jpg';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 export function DanceCompany() {
@@ -22,6 +23,7 @@ export function DanceCompany() {
     return (
         <div className="dance-company-container">
             <h1>Dance Company</h1>
+            <img src={teamPhoto} alt="Dance Company team photo" className="dance-company-photo" />
             <p className="dance-company-text">{danceCompanyText}</p>
 
             <nav className="dance-company-nav-container">
