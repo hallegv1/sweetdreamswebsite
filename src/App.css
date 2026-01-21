@@ -9,6 +9,46 @@
       var(--sdd-pink));
 }
 
+/* --- Global Theme Overrides --- */
+
+/* Fun Sized Theme */
+body.fs-theme #root {
+  background: linear-gradient(180deg,
+      var(--cm-baby-peach),
+      var(--cm-peach),
+      var(--cm-pink),
+      var(--cm-orange),
+      var(--cm-yellow));
+}
+
+/* Candy Melts Theme */
+body.cm-theme #root {
+  background: linear-gradient(180deg,
+      var(--cm-baby-peach),
+      var(--cm-peach),
+      var(--cm-pink),
+      var(--cm-orange),
+      var(--cm-yellow));
+}
+
+/* Girlie Pop Theme */
+body.gp-theme #root {
+  background: linear-gradient(180deg,
+      var(--gp-pink),
+      var(--gp-purple),
+      var(--gp-dark-purple),
+      var(--gp-red));
+}
+
+/* Variety Pack Theme */
+body.vp-theme #root {
+  background: linear-gradient(180deg,
+      var(--vp-yellow),
+      var(--vp-red),
+      var(--vp-turquoise),
+      var(--vp-gray));
+}
+
 .home-nav-container {
   display: flex;
   justify-content: center;
@@ -29,4 +69,25 @@
 .nav-btn:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
+}
+
+/* --- Mobile Styles (max-width 768px) --- */
+@media screen and (max-width: 768px) {
+
+  .home-nav-container {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0;
+  }
+
+  .nav-btn {
+    width: 80%;
+    text-align: center;
+    margin-right: 0;
+    padding: 12px;
+  }
+
+  .app {
+    padding-bottom: 40px;
+  }
 }

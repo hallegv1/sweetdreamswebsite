@@ -1,46 +1,4 @@
-/**
- *  Dance Company Gradients
- */
-
-.fs-container {
-    background: linear-gradient(180deg,
-            var(--cm-baby-peach),
-            var(--cm-peach),
-            var(--cm-pink),
-            var(--cm-orange),
-            var(--cm-yellow));
-}
-
-.cm-container {
-    background: linear-gradient(180deg,
-            var(--cm-baby-peach),
-            var(--cm-peach),
-            var(--cm-pink),
-            var(--cm-orange),
-            var(--cm-yellow));
-}
-
-.gp-container {
-    background: linear-gradient(180deg,
-            var(--gp-pink),
-            var(--gp-purple),
-            var(--gp-dark-purple),
-            var(--gp-red));
-}
-
-.vp-container {
-    background: linear-gradient(180deg,
-            var(--vp-yellow-green),
-            var(--vp-red),
-            var(--vp-turquoise),
-            var(--vp-gray));
-}
-
-.dance-company-container,
-.fs-container,
-.cm-container,
-.gp-container,
-.vp-container {
+.dance-company-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +11,11 @@
 .dance-company-logo {
     width: 300px;
     height: auto;
-    margin: 30px 0;
 }
 
 .dance-company-photo {
     width: 500px;
     height: auto;
-    margin: 30px 0;
 }
 
 .dance-company-title {
@@ -72,7 +28,7 @@
     max-width: 600px;
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #ddd;
+    color: white;
 }
 
 .dance-company-nav-container {
@@ -84,7 +40,7 @@
 .nav-btn {
     text-decoration: none;
     padding: 10px 20px;
-    color: #ddd;
+    color: white;
     border-radius: 5px;
     font-weight: bold;
     margin-right: 10px;
@@ -92,10 +48,15 @@
     display: inline-block;
 }
 
+.nav-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
 .back-btn {
     text-decoration: none;
     padding: 10px 20px;
-    color: #ddd;
+    color: white;
     border-radius: 5px;
     font-weight: bold;
     margin-right: 10px;
@@ -106,4 +67,36 @@
 .back-btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
+}
+
+/* --- Mobile Styles (max-width 768px) --- */
+@media screen and (max-width: 768px) {
+
+    .dance-company-container {
+        padding: 15px;
+        margin: 30px;
+        min-height: auto;
+    }
+
+    .dance-company-logo {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    h1,
+    .dance-company-title {
+        font-size: 2rem;
+    }
+
+    .dance-company-text {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    .dance-company-nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
