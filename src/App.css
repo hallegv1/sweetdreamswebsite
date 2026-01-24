@@ -43,7 +43,7 @@ body.gp-theme #root {
 /* Variety Pack Theme */
 body.vp-theme #root {
   background: linear-gradient(180deg,
-      var(--vp-yellow),
+      var(--vp-yellow-green),
       var(--vp-red),
       var(--vp-turquoise),
       var(--vp-gray));
