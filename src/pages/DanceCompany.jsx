@@ -1,5 +1,6 @@
 import '../styles/DanceCompany.css';
 import teamPhoto from '../assets/images/sdd_team.jpg';
+import logo from '../assets/logos/sddc_full_logo.png';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 export function DanceCompany() {
@@ -9,9 +10,9 @@ export function DanceCompany() {
 
     if (!isMainPage) {
         return (
-            <div className="subpage-container">
+            <div>
                 <Link to={mainPage} className="back-btn">
-                    ← Back to Dance Company
+                    ← Back
                 </Link>
                 <Outlet />
             </div>
@@ -22,15 +23,14 @@ export function DanceCompany() {
 
     return (
         <div className="dance-company-container">
-            <h1>Dance Company</h1>
+            <img src={logo} alt="Sweet Dreams Dance logo" className="dance-company-logo" />
             <img src={teamPhoto} alt="Dance Company team photo" className="dance-company-photo" />
             <p className="dance-company-text">{aboutUs}</p>
-
             <nav className="dance-company-nav-container">
-                <Link to="/dance-company/fun-sized" className="nav-btn">Fun Sized</Link>
-                <Link to="/dance-company/candy-melts" className="nav-btn">Candy Melts</Link>
-                <Link to="/dance-company/girlie-pop" className="nav-btn">Girlie Pop</Link>
-                <Link to="/dance-company/variety-pack" className="nav-btn">Variety Pack</Link>
+                <Link to="/dance-company/fun-sized" className="dance-company-nav-btn">Fun Sized</Link>
+                <Link to="/dance-company/candy-melts" className="dance-company-nav-btn">Candy Melts</Link>
+                <Link to="/dance-company/girlie-pop" className="dance-company-nav-btn">Girlie Pop</Link>
+                <Link to="/dance-company/variety-pack" className="dance-company-nav-btn">Variety Pack</Link>
             </nav>
         </div>
     );

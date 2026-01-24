@@ -20,9 +20,11 @@ export function Contact() {
         e.preventDefault();
 
         const { name, subject, message } = formData;
-        const myEmail = "hallevogelpohl@gmail.com";
-        const mailtoLink = `mailto:${myEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`)}`;
-
+        const myEmail = "your-email@example.com";
+        const subjectEncoded = encodeURIComponent(subject);
+        const bodyEncoded = encodeURIComponent(`Name: ${name}\n\nMessage:\n${message}`)
+        const mailtoLink = `mailto:${myEmail}?subject=${subjectEncoded}&body=${bodyEncoded}`;
+        
         window.location.href = mailtoLink;
     };
 
@@ -32,7 +34,7 @@ export function Contact() {
             <p>Have a question? Send us an email directly!</p>
 
             <form onSubmit={handleSubmit} className="contact-form">
-                <div className="form-group">
+                <div className="contact-input">
                     <label htmlFor="name">Your Name</label>
                     <input
                         type="text"
@@ -45,7 +47,7 @@ export function Contact() {
                     />
                 </div>
 
-                <div className="form-group">
+                <div className="contact-input">
                     <label htmlFor="subject">Subject</label>
                     <input
                         type="text"
@@ -58,7 +60,7 @@ export function Contact() {
                     />
                 </div>
 
-                <div className="form-group">
+                <div className="contact-input">
                     <label htmlFor="message">Message</label>
                     <textarea
                         id="message"

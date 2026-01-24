@@ -13,20 +13,19 @@ export function VarietyPack() {
     }, []);
 
     const varietyPackText = 'Variety Pack is an all inclusive competitive team created by Justine Wang that highlights the diversity of skills and talent of each individual dancer. Variety Pack pushes our creative boundaries and continues to challenge ourselves both technically and artistically while building a supportive, driven community.';
-    const directorsAndCaptainsText = 'Director: Justine Wang\nCaptains: Suyeu Kuo and Julian Natividad';
+    const directorText = 'Director: Justine Wang'
+    const captainsText = 'Captains: Suyeu Kuo and Julian Natividad';
 
     return (
         <div className="dance-company-container">
             <img src={logo} alt="Variety Pack Logo" className="dance-company-logo" />
-
-            <h1>Variety Pack</h1>
-            <p className="dance-company-text">
-                {directorsAndCaptainsText}
-            </p>
-
             <img src={teamPhoto} alt="Variety Pack team photo" className="dance-company-photo" />
-
             <p className="dance-company-text">
+                {directorText}
+                <br />
+                {captainsText}
+                <br />
+                <br />
                 {varietyPackText}
             </p>
         </div>

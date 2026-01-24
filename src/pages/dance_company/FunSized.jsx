@@ -17,7 +17,6 @@ export function FunSized() {
     return (
         <div className="dance-company-container">
             <img src={logo} alt="Fun Sized Logo" className="dance-company-logo" />
-            <h1>Fun Sized</h1>
             <p className="dance-company-text">
                 {directorText}
             </p>

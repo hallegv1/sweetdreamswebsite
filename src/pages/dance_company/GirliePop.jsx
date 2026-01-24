@@ -17,8 +17,6 @@ export function GirliePop() {
     return (
         <div className="dance-company-container">
             <img src={logo} alt="Girlie Pop Logo" className="dance-company-logo" />
-
-            <h1>Girlie Pop</h1>
             <p className="dance-company-text">
                 {directorsAndCaptainsText}
             </p>

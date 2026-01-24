@@ -18,14 +18,11 @@ export function CandyMelts() {
     return (
         <div className="dance-company-container">
             <img src={logo} alt="Candy Melts Logo" className="dance-company-logo" />
-            <h1>Candy Melts</h1>
+            <img src={teamPhoto} alt="Candy Melts team photo" className="dance-company-photo" />
             <p className="dance-company-text">
                 {directorText}
-            </p>
-
-            <img src={teamPhoto} alt="Candy Melts team photo" className="dance-company-photo" />
-
-            <p className="dance-company-text">
+                <br />
+                <br />
                 {candyMeltsText}
             </p>
         </div>

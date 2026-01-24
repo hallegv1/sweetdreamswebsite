@@ -3,46 +3,53 @@
   margin: 0;
   padding: 0;
   text-align: left;
-  background: linear-gradient(180deg,
-      var(--sdd-blue),
+  background: linear-gradient(135deg,
       var(--sdd-purple),
-      var(--sdd-pink));
+      var(--sdd-blue),
+      var(--sdd-pink),
+      var(--sdd-blue),
+      var(--sdd-purple));
 }
 
 /* --- Global Theme Overrides --- */
 
 /* Fun Sized Theme */
 body.fs-theme #root {
-  background: linear-gradient(180deg,
+  background: linear-gradient(135deg,
       var(--cm-baby-peach),
+      var(--cm-pink),
+      var(--cm-peach),
+      var(--cm-orange),
       var(--cm-peach),
       var(--cm-pink),
-      var(--cm-orange),
       var(--cm-yellow));
 }
 
 /* Candy Melts Theme */
 body.cm-theme #root {
-  background: linear-gradient(180deg,
+  background: linear-gradient(135deg,
       var(--cm-baby-peach),
+      var(--cm-pink),
+      var(--cm-peach),
+      var(--cm-orange),
       var(--cm-peach),
       var(--cm-pink),
-      var(--cm-orange),
       var(--cm-yellow));
 }
 
 /* Girlie Pop Theme */
 body.gp-theme #root {
-  background: linear-gradient(180deg,
+  background: linear-gradient(135deg,
+      var(--gp-purple),
       var(--gp-pink),
       var(--gp-purple),
-      var(--gp-dark-purple),
-      var(--gp-red));
+      var(--gp-pink),
+      var(--gp-dark-purple));
 }
 
 /* Variety Pack Theme */
 body.vp-theme #root {
-  background: linear-gradient(180deg,
+  background: linear-gradient(135deg,
       var(--vp-yellow-green),
       var(--vp-red),
       var(--vp-turquoise),
@@ -59,7 +66,7 @@ body.vp-theme #root {
   text-decoration: none;
   padding: 10px 20px;
   color: #ddd;
-  border-radius: 5px;
+  border-radius: 20px;
   font-weight: bold;
   margin-right: 10px;
   transition: all 0.3s;
