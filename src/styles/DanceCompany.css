@@ -29,6 +29,7 @@
     font-size: 1.2rem;
     line-height: 1.6;
     color: white;
+    text-align: left;
 }
 
 .dance-company-nav-container {
@@ -98,5 +99,50 @@
     .dance-company-nav-container {
         flex-direction: column;
         gap: 10px;
+    }
+}
+
+.leaders-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.leader-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.leader-img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.leader-bio {
+    flex: 1;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.leaders-container.single-column {
+    grid-template-columns: 1fr;
+}
+
+.leaders-container.single-column .leader-img {
+    max-width: 50vw;
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .leaders-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }

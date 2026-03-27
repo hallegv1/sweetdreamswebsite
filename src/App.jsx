@@ -1,19 +1,41 @@
-import './App.css'
-import { Routes, Route, Link } from 'react-router-dom';
-import { AboutUs, Classes, Contact, DanceCompany, Home, SweetEscape, FunSized, CandyMelts, GirliePop, VarietyPack, } from './pages/Pages';
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import {
+  AboutUs,
+  CEO,
+  Classes,
+  Contact,
+  DanceCompany,
+  Home,
+  Leadership,
+  SweetEscape,
+  FunSized,
+  CandyMelts,
+  GirliePop,
+  VarietyPack,
+} from "./pages/Pages";
 
 export default function App() {
   return (
     <div className="app">
       <nav className="home-nav-container">
-        <Link to="/" className="nav-btn">Home</Link>
-        <Link to="/sweet-escape" className="nav-btn">Sweet Escape</Link>
+        <Link to="/" className="nav-btn">
+          Home
+        </Link>
+        <Link to="/sweet-escape" className="nav-btn">
+          Sweet Escape
+        </Link>
         {/* <Link to="/classes" className="nav-btn">Classes</Link> */}
-        <Link to="/dance-company" className="nav-btn">Dance Company</Link>
-        <Link to="/about-us" className="nav-btn">About Us</Link>
-        <Link to="/contact" className="nav-btn">Contact</Link>
+        <Link to="/dance-company" className="nav-btn">
+          Dance Company
+        </Link>
+        <Link to="/about-us" className="nav-btn">
+          About Us
+        </Link>
+        <Link to="/contact" className="nav-btn">
+          Contact
+        </Link>
       </nav>
-
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,9 +50,10 @@ export default function App() {
         </Route>
 
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/about-us/ceo" element={<CEO />} />
+        <Route path="/about-us/leadership" element={<Leadership />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
     </div>
   );
 }
