@@ -85,6 +85,43 @@ export function CEO() {
           <p className="leader-bio">{justineBio}</p>
         </div>
       </div>
+      <div
+        style={{
+          margin: "32px 0 12px 0",
+          display: "flex",
+          justifyContent: "center",
+          gap: 24,
+          flexWrap: "wrap",
+        }}
+      >
+        <iframe
+          src="https://www.instagram.com/p/DR0PayCEu5x/embed"
+          width="560"
+          height="700"
+          frameBorder="0"
+          scrolling="no"
+          allowtransparency="true"
+          allowFullScreen
+          title="2025 Beginning Grooves Wrapped Instagram Post"
+          style={{
+            border: "none",
+            borderRadius: 8,
+            background: "#222",
+            marginBottom: 16,
+          }}
+        ></iframe>
+        <iframe
+          src="https://www.instagram.com/reel/DWSmGgRgKsd/embed"
+          width="560"
+          height="700"
+          frameBorder="0"
+          scrolling="no"
+          allowtransparency="true"
+          allowFullScreen
+          title="Recent Beginning Grooves Class Instagram Reel"
+          style={{ border: "none", borderRadius: 8, background: "#222" }}
+        ></iframe>
+      </div>
     </div>
   );
 }

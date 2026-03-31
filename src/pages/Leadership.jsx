@@ -8,6 +8,10 @@ import gabyImg from "../assets/images/lship/gaby.JPG";
 import valImg from "../assets/images/lship/val.jpeg";
 import julianImg from "../assets/images/lship/julian.JPG";
 import suyeuImg from "../assets/images/lship/suyeu.jpg";
+import fsLogo from "../assets/logos/fs_logo.png";
+import cmLogo from "../assets/logos/cm_logo.png";
+import gpLogo from "../assets/logos/gp_logo.png";
+import vpLogo from "../assets/logos/vp_logo.png";
 
 export function Leadership() {
   const leadershipText =
@@ -279,42 +283,81 @@ export function Leadership() {
       <h1>Leadership</h1>
       <p className="dance-company-text">{leadershipText}</p>
 
-      <div className="leaders-container">
-        <div className="leader-row">
-          <img src={ceciImg} alt="Cecilia Abdon" className="leader-img" />
-          <p className="leader-bio">{ceciBio}</p>
+      {/* Fun Sized & Candy Melts Section */}
+      <div className="leaders-group">
+        <img
+          src={cmLogo}
+          alt="Candy Melts Logo"
+          className="leaders-group-logo"
+        />
+        <img src={fsLogo} alt="Fun Sized Logo" className="leaders-group-logo" />
+        <div className="leaders-container single-column">
+          <div className="leader-row">
+            <img src={ceciImg} alt="Cecilia Abdon" className="leader-img" />
+            <p className="leader-bio">{ceciBio}</p>
+          </div>
+          <div className="leader-row">
+            <img src={laniImg} alt="Leilani Chung" className="leader-img" />
+            <p className="leader-bio">{laniBio}</p>
+          </div>
         </div>
-        <div className="leader-row">
-          <img src={laniImg} alt="Leilani Chung" className="leader-img" />
-          <p className="leader-bio">{laniBio}</p>
+      </div>
+
+      {/* Girlie Pop Section */}
+      <div className="leaders-group">
+        <img
+          src={gpLogo}
+          alt="Girlie Pop Logo"
+          className="leaders-group-logo"
+        />
+        <div className="leaders-container single-column">
+          <div className="leader-row">
+            <img src={jezelleImg} alt="Jezelle Edora" className="leader-img" />
+            <p className="leader-bio">{jezelleBio}</p>
+          </div>
+          <div className="leader-row">
+            <img src={teaImg} alt="Tea Ramirez" className="leader-img" />
+            <p className="leader-bio">{teaBio}</p>
+          </div>
+          <div className="leader-row">
+            <img
+              src={gabyImg}
+              alt="Gabriela Gutierrez"
+              className="leader-img"
+            />
+            <p className="leader-bio">{gabyBio}</p>
+          </div>
+          <div className="leader-row">
+            <img
+              src={valImg}
+              alt="Valeria Brown-Binkley"
+              className="leader-img"
+            />
+            <p className="leader-bio">{valBio}</p>
+          </div>
         </div>
-        <div className="leader-row">
-          <img src={jezelleImg} alt="Jezelle Edora" className="leader-img" />
-          <p className="leader-bio">{jezelleBio}</p>
-        </div>
-        <div className="leader-row">
-          <img src={teaImg} alt="Tea Ramirez" className="leader-img" />
-          <p className="leader-bio">{teaBio}</p>
-        </div>
-        <div className="leader-row">
-          <img src={gabyImg} alt="Gabriela Gutierrez" className="leader-img" />
-          <p className="leader-bio">{gabyBio}</p>
-        </div>
-        <div className="leader-row">
-          <img
-            src={valImg}
-            alt="Valeria Brown-Binkley"
-            className="leader-img"
-          />
-          <p className="leader-bio">{valBio}</p>
-        </div>
-        <div className="leader-row">
-          <img src={julianImg} alt="Julian Natividad" className="leader-img" />
-          <p className="leader-bio">{julianBio}</p>
-        </div>
-        <div className="leader-row">
-          <img src={suyeuImg} alt="Suyeu Kuo" className="leader-img" />
-          <p className="leader-bio">{suyeuBio}</p>
+      </div>
+
+      {/* Variety Pack Section */}
+      <div className="leaders-group">
+        <img
+          src={vpLogo}
+          alt="Variety Pack Logo"
+          className="leaders-group-logo"
+        />
+        <div className="leaders-container single-column">
+          <div className="leader-row">
+            <img
+              src={julianImg}
+              alt="Julian Natividad"
+              className="leader-img"
+            />
+            <p className="leader-bio">{julianBio}</p>
+          </div>
+          <div className="leader-row">
+            <img src={suyeuImg} alt="Suyeu Kuo" className="leader-img" />
+            <p className="leader-bio">{suyeuBio}</p>
+          </div>
         </div>
       </div>
     </div>

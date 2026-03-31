@@ -1,5 +1,6 @@
 import "./App.css";
 import { Routes, Route, Link } from "react-router-dom";
+import { useEffect } from "react";
 import {
   AboutUs,
   CEO,
@@ -14,8 +15,22 @@ import {
   GirliePop,
   VarietyPack,
 } from "./pages/Pages";
+import sdCandyLogo from "./assets/logos/sd_candy.png";
 
 export default function App() {
+  useEffect(() => {
+    const nav = document.querySelector(".home-nav-container");
+    function onScroll() {
+      if (window.scrollY > 10) {
+        nav?.classList.add("scrolled");
+      } else {
+        nav?.classList.remove("scrolled");
+      }
+    }
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
     <div className="app">
       <nav className="home-nav-container">
@@ -54,6 +69,14 @@ export default function App() {
         <Route path="/about-us/leadership" element={<Leadership />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      <footer className="app-footer">
+        <img
+          src={sdCandyLogo}
+          alt="sd_candy"
+          style={{ height: 64, width: "auto", display: "inline-block" }}
+        />
+      </footer>
     </div>
   );
 }

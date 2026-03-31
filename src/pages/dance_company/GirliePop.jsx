@@ -208,28 +208,32 @@ export function GirliePop() {
   return (
     <div className="dance-company-container">
       <img src={logo} alt="Girlie Pop Logo" className="dance-company-logo" />
+      <a
+        href="/about-us/leadership#jezelle"
+        className="company-leadership-line"
+        style={{
+          marginTop: "16px",
+          color: "#fff",
+          textDecoration: "none",
+          fontWeight: "bold",
+          fontSize: "1.15rem",
+          display: "block",
+        }}
+      >
+        Led by Jezelle Edora, Tea Ramirez, Gabriela Gutierrez, and Valeria
+        Brown-Binkley
+      </a>
       <p className="dance-company-text">{girliePopText}</p>
-      <div className="leaders-container">
-        <div className="leader-row">
-          <img src={jezelleImg} alt="Jezelle Edora" className="leader-img" />
-          <p className="leader-bio">{jezelleBio}</p>
-        </div>
-        <div className="leader-row">
-          <img src={teaImg} alt="Tea Ramirez" className="leader-img" />
-          <p className="leader-bio">{teaBio}</p>
-        </div>
-        <div className="leader-row">
-          <img src={gabyImg} alt="Gabriela Gutierrez" className="leader-img" />
-          <p className="leader-bio">{gabyBio}</p>
-        </div>
-        <div className="leader-row">
-          <img
-            src={valImg}
-            alt="Valeria Brown-Binkley"
-            className="leader-img"
-          />
-          <p className="leader-bio">{valBio}</p>
-        </div>
+      <div style={{ margin: "32px 0", textAlign: "center" }}>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/lZ249GITuug"
+          title="Girlie Pop Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   );

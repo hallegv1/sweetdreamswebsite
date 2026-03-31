@@ -15,10 +15,14 @@
 }
 
 .about-text {
-    max-width: 600px;
     font-size: 1.2rem;
     line-height: 1.6;
     color: white;
+}
+
+.dance-company-text p,
+.about-text p {
+    margin-bottom: 1.2em;
 }
 
 .about-nav-container {
@@ -30,10 +34,15 @@
 .about-nav-btn {
     text-decoration: none;
     padding: 10px 20px;
-    color: #ddd;
+    color: #fff;
     border-radius: 20px;
     font-weight: bold;
     margin-right: 10px;
     transition: all 0.3s;
     display: inline-block;
+    background: none;
+}
+.about-nav-btn:hover, .about-nav-btn:focus {
+    background: rgba(255,255,255,0.12);
+    color: #fff;
 }

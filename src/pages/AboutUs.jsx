@@ -58,7 +58,6 @@ export function AboutUs() {
 
   return (
     <div className="dance-company-container">
-      <h1>About Us</h1>
       <img
         src={logo}
         alt="Sweet Dreams Dance logo"
@@ -77,7 +76,7 @@ export function AboutUs() {
           Leadership
         </Link>
       </nav>
-      {aboutText}
+      <div className="dance-company-text">{aboutText}</div>
     </div>
   );
 }

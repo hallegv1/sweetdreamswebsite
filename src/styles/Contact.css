@@ -1,3 +1,19 @@
+/* Social icon hover effect */
+.social-link {
+    display: inline-block;
+    text-align: center;
+}
+.social-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    transition: transform 0.2s;
+}
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+    transform: scale(1.25);
+}
 .contact-container {
     display: flex;
     flex-direction: column;

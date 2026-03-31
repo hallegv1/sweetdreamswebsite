@@ -37,10 +37,9 @@ As Sweet Dreams continues to grow and hosts more workshops, programs, and events
       <img
         src={teamPhoto}
         alt="Dance Company team photo"
-        className="dance-company-photo"
+        className="dance-company-photo dance-company-photo-large"
       />
-      <p className="dance-company-text">{aboutUs}</p>
-      <nav className="dance-company-nav-container">
+      <nav className="dance-company-nav-container dance-company-nav-top">
         <Link to="/dance-company/fun-sized" className="dance-company-nav-btn">
           Fun Sized
         </Link>
@@ -57,6 +56,8 @@ As Sweet Dreams continues to grow and hosts more workshops, programs, and events
           Variety Pack
         </Link>
       </nav>
+      <p className="dance-company-text">{aboutUs}</p>
+      <Outlet />
     </div>
   );
 }
